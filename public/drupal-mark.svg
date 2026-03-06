@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Drupal guide mark">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="84" height="84" rx="18" fill="url(#g)"/>
+  <path d="M48 22c10.5 9.2 18 20.2 18 31.2C66 67 57.6 76 48 76S30 67 30 53.2C30 42.2 37.5 31.2 48 22Z" fill="#ffffff" opacity="0.95"/>
+  <path d="M48 38c6.2 5.6 10.6 12.1 10.6 18.6 0 8.1-5 13.8-10.6 13.8S37.4 64.7 37.4 56.6C37.4 50.1 41.8 43.6 48 38Z" fill="#0b1220" opacity="0.16"/>
+  <text x="48" y="57" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="18" font-weight="800" fill="#ffffff">D</text>
+</svg>
+
