@@ -12,6 +12,20 @@
   --tag-bg: #0d1e35;
 }
 
+[data-theme="light"] {
+  --ink: #1a2332;
+  --paper: #f5f7fa;
+  --accent: #0678be;
+  --accent-deep: #044d80;
+  --muted: #5a7a9a;
+  --divider: #d0dce8;
+  --code-bg: #1a2332;
+  --code-text: #29c5f6;
+  --highlight: #e8f4fd;
+  --success: #1a7a4a;
+  --tag-bg: #e0eaf4;
+}
+
 *,
 *::before,
 *::after {
@@ -782,4 +796,59 @@ footer span {
   .nav-tags {
     display: none;
   }
+}
+
+/* ── THEME TOGGLE BUTTON ── */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--divider);
+  color: var(--muted);
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(41, 197, 246, 0.08);
+}
+
+/* ── LIGHT MODE OVERRIDES for hardcoded dark values ── */
+[data-theme="light"] body { background: var(--paper); color: var(--ink); }
+
+[data-theme="light"] .step-card { background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+[data-theme="light"] .step-card h3 { color: #1a2332; }
+[data-theme="light"] .takeaway-item { background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+[data-theme="light"] .takeaway-item h4 { color: #1a2332; }
+[data-theme="light"] .conclusion-box { background: #1a2332; }
+[data-theme="light"] .section-divider::after { background: var(--paper); }
+
+[data-theme="light"] .callout.tip { background: #e8f4fd; }
+[data-theme="light"] .callout.info { background: #eef4ff; border-left-color: #4a7cdc; }
+[data-theme="light"] .callout.info .callout-title { color: #2d5ab5; }
+[data-theme="light"] .callout.warn { background: #fff0ee; border-left-color: #e05c2a; }
+[data-theme="light"] .callout.warn .callout-title { color: #b8420d; }
+[data-theme="light"] .callout.concept { background: #edfaf4; border-left-color: #1a7a4a; }
+[data-theme="light"] .callout.concept .callout-title { color: #1a7a4a; }
+
+[data-theme="light"] thead th { background: #1a2332; color: #e2e8f0; }
+[data-theme="light"] tbody td { color: #1a2332; }
+[data-theme="light"] tbody tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+
+[data-theme="light"] article p { color: #1a2332; }
+[data-theme="light"] ul.styled li, [data-theme="light"] ol.styled li { color: #1a2332; }
+[data-theme="light"] footer { background: #1a2332; }
+
+/* ── TRAVEL BLOG FLOATING THEME TOGGLE ── */
+.travel-theme-toggle-wrap {
+  position: fixed;
+  top: 14px;
+  right: 20px;
+  z-index: 200;
 }

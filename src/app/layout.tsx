@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Mono, DM_Sans, Playfair_Display } from "next/font/google";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -46,7 +47,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.variable} ${dmMono.variable} ${playfair.variable}`}>
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

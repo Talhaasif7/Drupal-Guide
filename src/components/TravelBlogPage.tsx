@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function TravelBlogPage() {
   useEffect(() => {
@@ -39,6 +40,9 @@ export function TravelBlogPage() {
   return (
     <>
       <div className="progress-bar" id="progressBar" />
+      <div className="travel-theme-toggle-wrap">
+        <ThemeToggle />
+      </div>
 
       <header className="hero">
         <img

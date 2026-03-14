@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function AiBlogPage() {
   useEffect(() => {
@@ -45,6 +46,7 @@ export function AiBlogPage() {
           <span className="ai-nav-tag">Google Gemini</span>
           <span className="ai-nav-tag">Drupal 11</span>
           <span className="ai-nav-tag">DDEV</span>
+          <ThemeToggle />
         </div>
       </nav>
 
@@ -86,8 +88,10 @@ export function AiBlogPage() {
           </div>
         </div>
 
+        <div className="ai-section">
         <p>Let me be completely honest with you. The first time I tried to integrate AI into Drupal, I got a white screen of death within the first fifteen minutes. No error message. Just a blank, silent, mocking white page.</p>
         <p>That was my introduction to Drupal AI development. And if you&apos;ve landed on this guide, there&apos;s a chance you&apos;re already acquainted with that same white screen, or you&apos;re desperately trying to avoid it.</p>
+        </div>
 
         <blockquote className="ai-intro-block">
           This isn&apos;t just a documentation page with copy-paste commands. This is a real guide built from months of trial, error, crashes, and eventual triumph. I&apos;m going to take you from a fresh machine, through local setup with DDEV, all the way to a working, intelligent Drupal site powered by Google Gemini — with every gotcha documented along the way.
@@ -99,6 +103,7 @@ export function AiBlogPage() {
         </figure>
 
         <div className="ai-divider"><span>Part 1 — The &quot;Why&quot;</span></div>
+        <div className="ai-section">
         <h2>Why AI and Drupal Are a Match Made in Heaven</h2>
         <p>The answer is Drupal&apos;s superpower: <strong>structured data</strong>. Drupal doesn&apos;t just store text — it stores <em>fields, relationships, taxonomies, and metadata</em>. That structure is exactly what makes AI so devastatingly effective inside Drupal.</p>
 
@@ -114,10 +119,13 @@ export function AiBlogPage() {
             <p>Traditional Drupal is a <em>data bucket</em> — you pour content in and retrieve it. AI-powered Drupal is an <em>intelligent agent</em> — it understands, transforms, enriches, and acts on your content autonomously.</p>
           </div>
         </div>
+        </div>
 
         <div className="ai-divider"><span>Part 2 — The Foundation</span></div>
+        <div className="ai-section">
         <h2>Building the Local Foundation with DDEV</h2>
         <p>Here&apos;s a mistake I made early on: I tried to set up Drupal AI on a shared hosting environment first, &quot;just to test.&quot; It was a disaster. PHP version mismatches, no terminal access, Composer timeouts. Don&apos;t do this. <strong>Always build locally first.</strong></p>
+        </div>
 
         <figure className="ai-img-inline ai-reveal">
           <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&auto=format&fit=crop&q=80" alt="Server and container technology — DDEV Docker local development" loading="lazy" />
@@ -163,8 +171,10 @@ export function AiBlogPage() {
         </div>
 
         <div className="ai-divider"><span>Part 3 — AI Integration</span></div>
+        <div className="ai-section">
         <h2>Integrating AI Into Drupal — The Right Way</h2>
         <p>The Drupal AI ecosystem is built around three layers:</p>
+        </div>
         <div className="ai-tree ai-reveal">
           <span className="ai-tree-hl">AI Integration Stack</span><br />
           ├── <span className="ai-tree-dir">drupal/key</span>
@@ -208,7 +218,10 @@ export function AiBlogPage() {
         </div>
 
         <div className="ai-divider"><span>Part 4 — Why Gemini</span></div>
+        <div className="ai-section">
         <h2>Why Gemini Beats OpenAI and Groq for Drupal</h2>
+        <p>I&apos;ve tested all three seriously — OpenAI GPT-4o, Anthropic Claude, and Groq. Each has genuine strengths. But for Drupal development specifically, <strong>Google Gemini wins</strong>. Here&apos;s why, point by point.</p>
+        </div>
 
         <div className="ai-table-wrap ai-reveal">
           <table>
@@ -236,7 +249,10 @@ export function AiBlogPage() {
         </div>
 
         <div className="ai-divider"><span>Part 5 — The Real Stuff</span></div>
+        <div className="ai-section">
         <h2>The Troubleshooting Section — My Actual War Stories</h2>
+        <p>This is the section I wish had existed when I started. Every one of these errors cost me hours. I&apos;m giving them to you for free.</p>
+        </div>
 
         <figure className="ai-img-inline ai-reveal">
           <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=900&auto=format&fit=crop&q=80" alt="Developer debugging code error on screen" loading="lazy" />
@@ -280,7 +296,10 @@ export function AiBlogPage() {
         </div>
 
         <div className="ai-divider"><span>Part 6 — Automation</span></div>
+        <div className="ai-section">
         <h2>Unlocking the AI Automator — Content Intelligence at Scale</h2>
+        <p>Once your base setup is stable, the AI Automator submodule is where things get genuinely exciting. It&apos;s the system that lets Drupal automatically process content with AI — no editor clicks required.</p>
+        </div>
         <pre><code>ddev drush en ai_automator -y{"\n"}ddev drush cr</code></pre>
         <p>Once enabled, go to any content type&apos;s <strong>Manage fields</strong> screen. On any text field, you&apos;ll see a new <strong>AI Automator</strong> tab. Configure it with Provider: Gemini, Model: <code>gemini-1.5-flash</code>, and a prompt. Save a new piece of content. Watch the meta description field populate itself.</p>
 

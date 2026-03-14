@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
 
 const posts = [
   {
@@ -79,6 +80,7 @@ export function LandingPage() {
           <a href="#blogs">Writing</a>
           <a href="#journey">Journey</a>
           <a href="#about">About</a>
+          <ThemeToggle />
         </div>
       </nav>
 
