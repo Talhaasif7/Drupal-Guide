@@ -40,26 +40,6 @@ export function TravelBlogPage() {
     <>
       <div className="progress-bar" id="progressBar" />
 
-      <nav className="sticky-nav">
-        <a className="nav-brand" href="#">
-          <Image
-            className="brand-logo"
-            src="/drupal-mark.svg"
-            alt="Drupal guide logo"
-            width={24}
-            height={24}
-            priority
-          />
-          Talha<span>Dev</span>
-        </a>
-        <div className="nav-tags">
-          <span className="nav-tag">Drupal</span>
-          <span className="nav-tag">DDEV</span>
-          <span className="nav-tag">Tutorial</span>
-          <span className="nav-tag">Travel CMS</span>
-        </div>
-      </nav>
-
       <header className="hero">
         <img
           className="hero-img"

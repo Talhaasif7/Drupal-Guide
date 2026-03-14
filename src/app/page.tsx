@@ -1,5 +1,5 @@
-import { TravelBlogPage } from "@/components/TravelBlogPage";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return <TravelBlogPage />;
+  redirect("/landing");
 }
