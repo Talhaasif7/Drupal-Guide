@@ -31,6 +31,19 @@ const posts = [
     imgAlt: "AI neural network — Drupal AI with Google Gemini",
     year: "2026",
   },
+  {
+    slug: "/gsoc-blog",
+    label: "Blog 03 · GSoC 2026 · Final Report",
+    title: "Engineering an AI Moderation Framework for Drupal: My GSoC Journey",
+    excerpt:
+      "From a simple API call to a full moderation pipeline — the R&D with Detoxify & Hugging Face, a hybrid classifier-LLM waterfall, security-conscious credential handling, and what really changed my engineering thinking.",
+    tags: ["GSoC 2026", "AI Moderation", "NLP", "ML", "Drupal"],
+    readTime: "30 min",
+    level: "Intermediate → Advanced",
+    img: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80",
+    imgAlt: "AI and machine learning concept — GSoC Drupal moderation framework",
+    year: "2026",
+  },
 ];
 
 const timeline = [
@@ -129,12 +142,12 @@ export function LandingPage() {
       {/* ── STATS ── */}
       <section className="ld-stats">
         <div className="ld-stat">
-          <span className="ld-stat-num">2</span>
+          <span className="ld-stat-num">3</span>
           <span className="ld-stat-label">Published Guides</span>
         </div>
         <div className="ld-stat-divider" />
         <div className="ld-stat">
-          <span className="ld-stat-num">38+</span>
+          <span className="ld-stat-num">68+</span>
           <span className="ld-stat-label">Min of Reading</span>
         </div>
         <div className="ld-stat-divider" />
@@ -145,7 +158,7 @@ export function LandingPage() {
         <div className="ld-stat-divider" />
         <div className="ld-stat">
           <span className="ld-stat-num">GSoC</span>
-          <span className="ld-stat-label">2026 Applicant</span>
+          <span className="ld-stat-label">2026 Contributor</span>
         </div>
       </section>
 
@@ -199,9 +212,10 @@ export function LandingPage() {
               unfiltered record of what it actually takes.
             </p>
             <p>
-              Currently applying for <strong>Google Summer of Code 2026</strong> to work
-              on Drupal&apos;s AI initiative. Every guide here is a real artifact from that
-              journey.
+              Selected for <strong>Google Summer of Code 2026</strong> to work on Drupal&apos;s
+              AI moderation initiative — built <code>toxic_spam_detection</code>, a multi-engine
+              AI moderation framework with hybrid pipeline, security controls, and automated testing.
+              Every guide here is a real artifact from that journey.
             </p>
             <div className="ld-about-links">
               <a href="https://www.drupal.org" target="_blank" rel="noopener noreferrer">
