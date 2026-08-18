@@ -58,13 +58,13 @@ export function GSoCBlogPage() {
         <div className="gsoc-hero-overlay" aria-hidden="true" />
         <div className="gsoc-hero-content">
           <div className="gsoc-hero-eyebrow">
-            <span className="gsoc-hero-tag">Google Summer of Code · Final Report</span>
-            <span className="gsoc-hero-tag-gsoc">GSoC 2026 · Drupal</span>
+            <span className="gsoc-hero-tag">Google Summer of Code 2026 · Final Report</span>
+            <span className="gsoc-hero-tag-gsoc">Talha&apos;s GSoC · Drupal</span>
           </div>
           <h1>
-            Engineering an AI Moderation<br />
-            Framework for Drupal:<br />
-            <em>My GSoC Journey</em>
+            Talha&apos;s GSoC 2026:<br />
+            <span className="gsoc-hero-gradient-title">Toxic Content &amp; Spam Detection</span><br />
+            <em>Engineering an AI Moderation Framework for Drupal</em>
           </h1>
           <p className="gsoc-hero-sub">
             From searching gsocorganizations.dev and building IssueSniper to a full moderation pipeline — the R&amp;D, 

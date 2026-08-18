@@ -2,13 +2,13 @@ import { GSoCBlogPage } from "@/components/GSoCBlogPage";
 import "../gsoc-blog.css";
 
 export const metadata = {
-  title: "Engineering an AI Moderation Framework for Drupal: My GSoC Journey | TalhaDrops",
+  title: "Talha's GSoC 2026: Toxic Content and Spam Detection for Drupal | TalhaDrops",
   description:
-    "Google Summer of Code 2026 final submission — how I built toxic_spam_detection for Drupal: R&D with Detoxify and Hugging Face, a hybrid AI moderation pipeline, security-conscious credential handling, NLP/ML classification, and automated testing.",
+    "Google Summer of Code 2026 final submission — how Talha built toxic_spam_detection for Drupal: R&D with Detoxify and Hugging Face, a hybrid AI moderation pipeline, IssueSniper community tool, security-conscious credential handling, and automated testing.",
   openGraph: {
-    title: "Engineering an AI Moderation Framework for Drupal: My GSoC Journey",
+    title: "Talha's GSoC 2026: Toxic Content and Spam Detection for Drupal",
     description:
-      "From a simple API call to a full moderation pipeline — the R&D, experiments, debugging, and architectural shifts that shaped the final result.",
+      "From searching gsocorganizations.dev and building IssueSniper to a full AI moderation pipeline for Drupal — the complete GSoC journey.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&h=630&fit=crop",
